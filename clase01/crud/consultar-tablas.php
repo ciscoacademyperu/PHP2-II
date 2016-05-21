@@ -1,5 +1,5 @@
 <?php 
-include('../constantes.php');
+
 include('../bd/conexion.php');
 $db     =  new Conexion();
 $query  = "SELECT * FROM alumno";

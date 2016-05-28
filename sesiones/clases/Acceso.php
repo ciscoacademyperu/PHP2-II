@@ -9,8 +9,8 @@ protected $contrasena;
 
 function __construct($usuario,$contrasena){
 
-$this->usuario     = $usuario;
-$this->contrasena  = $contrasena;
+$this->usuario     = addslashes($usuario);
+$this->contrasena  = addslashes($contrasena);
 
 }
 

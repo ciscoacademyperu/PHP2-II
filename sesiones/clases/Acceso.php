@@ -35,7 +35,7 @@ if ($numfilas>0)
      $_SESSION['nombres']=$fila['nombres']; 
      $_SESSION['apellidos']=$fila['apellidos'];
 
-     header('Location: home.php');   
+     header('Location: index.php');   
 
  }
    else 

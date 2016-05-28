@@ -1,8 +1,17 @@
 <?php 
+session_start();
 
+if (!isset($_SESSION['codigo']))
+ {
+    include('acceso.php');	
+ }
+else
 
-include('acceso.php');
-
+{
+	
+	
+	include('home.php');
+}
 
 
  ?>

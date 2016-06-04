@@ -1,17 +1,25 @@
 <?php 
+
+include('constantes.php');
+
 session_start();
 
-if (!isset($_SESSION['codigo']))
+if (!isset($_SESSION[KEY.'codigo']))
  {
-    include('acceso.php');	
+   include('acceso.php');	
  }
-else
 
-{
-	
-	
-	include('home.php');
-}
+ else
+ {
+ 	header('Location: /'.PATH.'/home.php');
+ }
+
+
+
+
+
+
 
 
  ?>
+

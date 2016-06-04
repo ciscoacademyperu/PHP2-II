@@ -5,7 +5,7 @@
 	<title>Acceso</title>
 </head>
 <body>
-<h3>Sesiones</h3>
+<h3>Sesiones 2</h3>
 <form action="validar.php" method="POST">
 
 <input type="text" name="usuario" id="" placeholder="usuario" autofocus required="">

@@ -1,8 +1,8 @@
 <?php 
 
-$key = "RTBGU689ety";
+$key = "AAAA986mjguiooLL";
 
-define("PATH","ciscoacademy/PHP2-II/sesiones");
+define("PATH","ciscoacademy/PHP2-II/sesiones2");
 
 define("SERVERBD",'localhost');
 define("USERBD",'root');

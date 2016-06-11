@@ -1,0 +1,9 @@
+Creacion de clases
+Creacion de Objetos
+-creacion de  variables
+
+-tipo de variables
+
+1.public
+2.protected
+3.private

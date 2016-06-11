@@ -1,6 +1,6 @@
 <?php 
 
-include('constantes.php');
+include('configuracion.php');
 include('bd/conexion.php');
 $db = new  Conexion();
 
@@ -22,9 +22,9 @@ if ($num_fila>0)
   session_start();
   
 
-   $_SESSION[KEY.'codigo']    = $dato['codigo'];
-   $_SESSION[KEY.'nombres']   = $dato['nombres'];
-   $_SESSION[KEY.'apellidos'] = $dato['apellidos'];
+   $_SESSION[KEY.CODIGO]    = $dato['codigo'];
+   $_SESSION[KEY.NOMBRES]   = $dato['nombres'];
+   $_SESSION[KEY.APELLIDOS] = $dato['apellidos'];
 
   header('Location: /'.PATH.'/home.php');
 }

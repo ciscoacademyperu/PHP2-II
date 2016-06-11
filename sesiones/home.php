@@ -1,11 +1,6 @@
 <?php
-include('constantes.php');
-
-session_start(); 
-if (!isset($_SESSION[KEY.'codigo']))
- {
-   header('Location: /'.PATH.'/');	
- }
+include('configuracion.php');
+include('sesion.php');
 
 ?>
 <!DOCTYPE html>
@@ -16,7 +11,7 @@ if (!isset($_SESSION[KEY.'codigo']))
 </head>
 <body>
 
-Bienvenido: <?php echo $_SESSION[KEY.'nombres'].' '.$_SESSION[KEY.'apellidos']; ?>
+Bienvenido: <?php echo $_SESSION[KEY.NOMBRES].' '.$_SESSION[KEY.APELLIDOS]; ?>
 	
 <br>	
 <a href="/<?php echo PATH ?>/salir.php">Cerrar Sesión</a>

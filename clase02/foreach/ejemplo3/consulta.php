@@ -7,7 +7,7 @@ $result = $db->query($query);
 
  ?>
 
- 	<table  border="1">
+ 	<table  id="consulta" class="table table-bordered table-condensed table-hover">
  		<thead>
  			<tr>
  			   <th><input type="checkbox" name="" id=""></th>

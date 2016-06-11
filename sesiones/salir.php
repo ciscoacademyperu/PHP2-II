@@ -1,9 +1,9 @@
 <?php 
-include('constantes.php');
+include('configuracion.php');
 session_start();
 
 session_start(); 
-if (!isset($_SESSION[KEY.'codigo']))
+if (!isset($_SESSION[KEY.CODIGO]))
  {
    header('Location: /'.PATH.'/');	
  }
@@ -11,9 +11,9 @@ if (!isset($_SESSION[KEY.'codigo']))
 else
 {
 
-unset($_SESSION[KEY.'codigo']);
-unset($_SESSION[KEY.'nombres']);
-unset($_SESSION[KEY.'apellidos']);
+unset($_SESSION[KEY.CODIGO]);
+unset($_SESSION[KEY.NOMBRES]);
+unset($_SESSION[KEY.APELLIDOS]);
 
 header('Location: /'.PATH.'/');
 

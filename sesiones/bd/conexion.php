@@ -1,5 +1,5 @@
 <?php 
-#include('../constantes.php');
+#include('../configuracion.php');
 
 
 /**

@@ -3,9 +3,9 @@
 class  Alumno{
 
 protected    $codigo    ="001";
-protected $nombres   ="Juan";
-private   $apellidos ="Torres";
-public   $edad =10;
+protected    $nombres   ="Juan";
+private      $apellidos ="Torres";
+public       $edad      =10;
 
 public function operacion($valor,$tipo)
 {

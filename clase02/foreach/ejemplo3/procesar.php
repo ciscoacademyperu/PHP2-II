@@ -1,5 +1,12 @@
 <?php 
 
+if (empty($_POST['codigo'])) {
+	
+header('Location: index.php?m=error');
+
+}
+
+
 include('../../constantes.php');
 include('../../bd/conexion.php');
 
@@ -12,7 +19,7 @@ foreach ($arraycodigo as $key => $value)
  {
 	
 
-$query   = "UPDATE alumno SET edad=edad+25 WHERE 
+$query   = "UPDATE alumno SET edad=edad+10 WHERE 
            codigo='$value'";
 $result  = $db->query($query);
 if (!$result) 

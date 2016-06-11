@@ -5,14 +5,25 @@ class Alumno{
 
 function mensaje(){
  
-   echo "Hola soy una funcion de la clase Alumno";
+   return "Hola soy una Funcion Publica";
+}
+
+
+function CorrelativoAlumno()
+{
+	$correlativo = 2345;
+	return  $correlativo;
 }
 
 }
 #crear del objeto alumno de tipo Alumno
 
 $alumno = new Alumno();
-$alumno -> mensaje();
+
+
+$correlativoalumno = $alumno -> CorrelativoAlumno();
+
+echo $correlativoalumno+1;
 
 
  ?>

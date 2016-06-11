@@ -12,12 +12,10 @@ define("BD",'clase01');
 
 define('KEY',$key); 
 
-
-
-
-
-
-
+#variables de sesion
+define('CODIGO','codigo'.$key);
+define('NOMBRES','nombre'.$key);
+define('APELLIDOS','apellidos'.$key);
 
 
  ?>

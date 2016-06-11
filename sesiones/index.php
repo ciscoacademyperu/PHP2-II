@@ -1,10 +1,10 @@
 <?php 
 
-include('constantes.php');
+include('configuracion.php');
 
 session_start();
 
-if (!isset($_SESSION[KEY.'codigo']))
+if (!isset($_SESSION[KEY.CODIGO]))
  {
    include('acceso.php');	
  }
